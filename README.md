@@ -1,70 +1,69 @@
-# Getting Started with Create React App
+# Web Development Project 4 - Veni Vici
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Submitted by: **Siva Macharla Vimjam**
 
-## Available Scripts
+This web app: **helps users discover random dog breeds and manage a personalized "ban list" to avoid seeing specific breeds again. The app fetches random dogs using The Dog API, displays breed info and an image, and allows banning and unbanning breeds through simple clicks. It also tracks the history of viewed dogs during the session.**
 
-In the project directory, you can run:
+Time spent: **6** hours spent in total
 
-### `npm start`
+## Required Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The following **required** functionality is completed: 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- [x] **Application features a button that creates a new API fetch request on click and displays at least three attributes and an image obtained from the returned JSON data**
+  - Displays: Dog image, breed name, group, and temperament
+- [x] **Only one item/data from API call response is viewable at a time and at least one image is displayed per API call**
+  - Displays only one breed result at a time
+  - Each image matches the corresponding breed and attributes
+- [x] **API call response results should appear random to the user**
+  - Each click on "Discover" shows a seemingly random new dog
+- [x] **Clicking on a displayed value for one attribute adds it to a displayed ban list**
+  - Breed name is clickable and can be added to or removed from the ban list instantly
+- [x] **Attributes on the ban list prevent further images/API results with that attribute from being displayed**
+  - Breeds in the ban list are skipped during future API fetches
+  - Clicking a banned breed removes it from the ban list in real-time
 
-### `npm test`
+## Optional Features
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The following **optional** features are implemented:
 
-### `npm run build`
+- [x] Users can see a stored history of their previously displayed results from this session
+  - A visual list of previously seen dog images appears at the bottom
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Additional Features
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* [x] Responsive layout with separate right-side panel for ban list
+* [x] Sticky ban list section with styled entries and hover effects
+* [x] Clean UI matching the CodePath design guide
+* [x] Efficient filtering logic for banned breeds
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Video Walkthrough
 
-### `npm run eject`
+Here's a walkthrough of implemented user stories:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<img src='https://i.imgur.com/IpBdGyu.gif' title='Video Walkthrough' alt='Video Walkthrough' />
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+GIF created with [ScreenToGif](https://www.screentogif.com/)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Notes
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Some challenges included:
+- Filtering API results with inconsistent breed data structure
+- Ensuring banned breeds never appear again while avoiding infinite loops
+- Styling the ban list section to remain readable and responsive
 
-## Learn More
+## License
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+    Copyright 2025 Siva Macharla Vimjam
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
 
-### Code Splitting
+        http://www.apache.org/licenses/LICENSE-2.0
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
