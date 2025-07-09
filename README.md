@@ -41,9 +41,7 @@ The following **optional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='https://i.imgur.com/IpBdGyu.gif' title='Video Walkthrough' alt='Video Walkthrough' />
-
-GIF created with [ScreenToGif](https://www.screentogif.com/)
+Link: https://submissions.us-east-1.linodeobjects.com/web102/kVswopkr.gif
 
 ## Notes
 
